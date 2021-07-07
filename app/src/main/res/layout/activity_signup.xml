@@ -1,110 +1,210 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout7"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity_Signup"
-    android:background="#4BD0B0">
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="100dp"
-        android:background="@drawable/my_screen_bar">
+    android:background="#4BD0B0"
+    tools:context=".Activity_Signup">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/relativeLayout8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/my_screen_bar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline48">
+
         <TextView
             android:id="@+id/signUp_txt"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerHorizontal="true"
             android:text="Sign Up"
             android:textColor="@color/black"
-            android:textStyle="bold"
             android:textSize="30dp"
-            android:layout_marginTop="30dp"
-            android:layout_centerHorizontal="true"
-            />
+            android:textStyle="bold"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toTopOf="@+id/guideline54"
+            app:layout_constraintEnd_toStartOf="@+id/guideline52"
+            app:layout_constraintStart_toStartOf="@+id/guideline51"
+            app:layout_constraintTop_toTopOf="@+id/guideline53" />
+
         <LinearLayout
             android:id="@+id/input_linear"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginTop="20dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
             android:layout_below="@+id/signUp_txt"
-            android:paddingHorizontal="30dp">
+            android:orientation="vertical"
+            android:paddingHorizontal="30dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline56"
+            app:layout_constraintEnd_toStartOf="@+id/guideline50"
+            app:layout_constraintStart_toStartOf="@+id/guideline49"
+            app:layout_constraintTop_toTopOf="@+id/guideline55">
 
             <EditText
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_bar"
                 android:hint="First Name"
-                android:textColor="@color/black"
-                android:textColorHint="@color/black"
-                android:background="@drawable/edittext_bar"
                 android:paddingVertical="15dp"
-                android:paddingLeft="10dp"/>
+                android:paddingLeft="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
             <EditText
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittext_bar"
                 android:hint="Last Name"
+                android:paddingVertical="15dp"
                 android:paddingLeft="10dp"
-                android:layout_marginTop="20dp"
                 android:textColor="@color/black"
-                android:textColorHint="@color/black"
-                android:background="@drawable/edittext_bar"
-                android:paddingVertical="15dp"/>
+                android:textColorHint="@color/black" />
+
             <EditText
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittext_bar"
                 android:hint="E-mail"
+                android:paddingVertical="15dp"
                 android:paddingLeft="10dp"
-                android:layout_marginTop="20dp"
                 android:textColor="@color/black"
-                android:textColorHint="@color/black"
-                android:background="@drawable/edittext_bar"
-                android:paddingVertical="15dp"/>
+                android:textColorHint="@color/black" />
+
             <EditText
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittext_bar"
                 android:hint="Phone number"
+                android:paddingVertical="15dp"
                 android:paddingLeft="10dp"
-                android:layout_marginTop="20dp"
                 android:textColor="@color/black"
-                android:textColorHint="@color/black"
-                android:background="@drawable/edittext_bar"
-                android:paddingVertical="15dp"/>
+                android:textColorHint="@color/black" />
+
             <EditText
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittext_bar"
                 android:hint="Set username"
+                android:paddingVertical="15dp"
                 android:paddingLeft="10dp"
-                android:layout_marginTop="20dp"
                 android:textColor="@color/black"
-                android:textColorHint="@color/black"
-                android:background="@drawable/edittext_bar"
-                android:paddingVertical="15dp"/>
+                android:textColorHint="@color/black" />
+
             <EditText
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:hint="Set password"
-                android:paddingLeft="10dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:textColor="@color/black"
-                android:textColorHint="@color/black"
                 android:background="@drawable/edittext_bar"
-                android:paddingVertical="15dp"/>
+                android:hint="Set password"
+                android:paddingVertical="15dp"
+                android:paddingLeft="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
 
 
         </LinearLayout>
+
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_signUp_otp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Sign up"
-            android:background="@drawable/my_button"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
             android:layout_below="@+id/input_linear"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="30dp"
-            android:textColor="@color/white"/>
+            android:background="@drawable/my_button"
+            android:text="Sign up"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/guideline57"
+            app:layout_constraintEnd_toStartOf="@+id/guideline52"
+            app:layout_constraintStart_toStartOf="@+id/guideline51"
+            app:layout_constraintTop_toTopOf="@+id/guideline58" />
 
-    </RelativeLayout>
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline49"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.08029197" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline51"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.36" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline52"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.63" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.9270073" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline53"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="28dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline54"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="68dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline55"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="103dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline56"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="526dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline57"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="595dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline58"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="547dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline48"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.14" />
 
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

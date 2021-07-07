@@ -1,53 +1,151 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="#4BD0B0">
+    android:background="#4BD0B0"
+    tools:context=".MainActivity">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="460dp"
-        android:background="@drawable/my_screen_bar">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/my_screen_bar"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        app:layout_constraintVertical_bias="0.0">
+
+
         <TextView
             android:id="@+id/start_txt"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerHorizontal="true"
+            android:text="Let's get started!"
+            android:textColor="@color/black"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toTopOf="@+id/guideline13"
+            app:layout_constraintEnd_toStartOf="@+id/guideline15"
+            app:layout_constraintStart_toStartOf="@+id/guideline14"
+            app:layout_constraintTop_toTopOf="@+id/guideline12" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_main_login"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/my_button"
+            android:text="Log-in"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/guideline11"
+            app:layout_constraintEnd_toStartOf="@+id/guideline10"
+            app:layout_constraintStart_toStartOf="@+id/guideline9"
+            app:layout_constraintTop_toTopOf="@+id/guideline6" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_signUp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/my_button"
+            android:text="sign up"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/guideline11"
+            app:layout_constraintEnd_toStartOf="@+id/guideline8"
+            app:layout_constraintStart_toStartOf="@+id/guideline7"
+            app:layout_constraintTop_toTopOf="@+id/guideline6" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Let's get started!"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="80dp"
-            android:textStyle="bold"
-            android:textColor="@color/black"
-            android:textSize="35dp"/>
-        <LinearLayout
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.23" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.18" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.46" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.77" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.82" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.55" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginTop="50dp"
-            android:layout_centerHorizontal="true"
-            android:layout_below="@+id/start_txt">
+            app:layout_constraintGuide_percent="0.59" />
 
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btn_main_login"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Log-in"
-                android:layout_marginRight="30dp"
-                android:background="@drawable/my_button"
-                android:textColor="@color/white"/>
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btn_signUp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="sign up"
-                android:background="@drawable/my_button"
-                android:textColor="@color/white"/>
-        </LinearLayout>
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.09" />
 
-    </RelativeLayout>
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.23" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.75" />
 
 
-</RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.59" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="1.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
