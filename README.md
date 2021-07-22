@@ -1,7 +1,7 @@
 # UniverCity_app
 
 ## Contributors List:
-Vanshika Nehra\
 Vishal\
+Vanshika Nehra\
 Eeshani Majumder\
 Shubham Maheshwari
